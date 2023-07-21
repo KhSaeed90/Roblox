@@ -1,6 +1,6 @@
 --[[
-      https://v3rmillion.net/showthread.php?tid=1040650
-      https://github.com/bloodball/UI-Librarys/blob/main/Wally%20UI%20v3
+	UI Name: Wally's v3 Library
+	UI Link: https://v3rmillion.net/showthread.php?tid=1040650
 ]]--
 
 addLibrary = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))() -- Don't Change
