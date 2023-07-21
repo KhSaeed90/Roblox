@@ -3,27 +3,27 @@
 	UI Link: https://v3rmillion.net/showthread.php?tid=1046594
 ]]--
 
-local Lib = loadstring(game:HttpGet("https://pastebin.com/raw/GCM3Zpzg",true))()
-local Table = {}
-local window = Lib:CreateWindow("Nice")
-window:Section("Section")
-window:Button("Button",function()
+addLibrary = loadstring(game:HttpGet("https://pastebin.com/raw/GCM3Zpzg",true))()
+addTable = {}
+addWindown = addLibrary:CreateWindow("Nice")
+addWindown:Section("Section")
+addWindown:Button("Button", function()
    print("Nice")
 end)
-window:Toggle("Toggle",{location = Table, flag = "Toggle"},function()
-   print(Table["Toggle"])
+addWindown:Toggle("Toggle", {location= addTable, flag= "Toggle"}, function()
+   print(addTable["Toggle"])
 end)
-window:Slider("Slider",{location = Table, min = 1, max = 64, default = 32, precise = true --[[ 0.00 instead of 0 ]], flag = "Slider"},function()
-   print(Table["Slider"])
+addWindown:Slider("Slider", {location= addTable, min= 1, max= 64, default= 32, precise= nil --[[ 0.00 instead of 0 ]], flag= "Slider"}, function()
+   print(addTable["Slider"])
 end)
-window:Dropdown("Dropdown",{location = Table,flag = "Dropdown",search = true --[[AddsSearchBar]], list = {"1","2","3","4","5","6","7","8","9","0"} --[[Wont work when PlayerList = true]], PlayerList = true --[[ Turns the list into the players in the server ]]},function()
-   print(Table["Dropdown"])
+addWindown:Dropdown("Dropdown", {location= addTable, flag= "Dropdown", search= true --[[AddsSearchBar]], list= {"1","2"} --[[Wont work when PlayerList = true]], PlayerList= true --[[ Turns the list into the players in the server ]]}, function()
+   print(addTable["Dropdown"])
 end)
-window:Bind("KeyBind",{location = Table, flag = "KeyBind", default = Enum.KeyCode.B},function() -- Automatically stops when the gui is removed
-   print(Table["KeyBind"])
+addWindown:Bind("KeyBind", {location= addTable, flag= "KeyBind", default= Enum.KeyCode.B}, function() -- Automatically stops when the gui is removed
+   print(addTable["KeyBind"])
 end)
-window:Box("Box",{location = Table,flag = "Box", type = "number" --[[ Only Numbers automatically on false ]], hold = "Numbers" --[[ PlaceHolderText ]]},function()
-   print(Table["Box"])
+addWindown:Box("Box", {location= addTable, flag= "Box", type= "number" --[[ Only Numbers automatically on false ]], hold= "Numbers" --[[ PlaceHolderText ]]}, function()
+   print(addTable["Box"])
 end)
-window:Search(Color3.fromRGB(255,0,255) --[[nil = Yellow]]) -- Ez searcher for if you have a lot of things
-window:String({string = "String"})
+addWindown:Search(Color3.fromRGB(255,0,255) --[[nil = Yellow]]) -- Ez searcher for if you have a lot of things
+addWindown:String({string= "String"})
