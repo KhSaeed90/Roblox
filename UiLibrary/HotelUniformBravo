@@ -1,1 +1,147 @@
+function Script()
+    if game.PlaceId == 12090482034  then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/BabyBobby'sDaycare"))()
+    elseif game.PlaceId == 8712817601 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/Barry'sPrisonRun"))()
+    elseif game.PlaceId == 5777099015 or game.PlaceId == 9053673709 or game.PlaceId == 9531170732 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/CheeseEscape"))()
+    elseif game.PlaceId == 12357508217 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/ChillObby"))()
+    elseif game.PlaceId == 5702593762 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/Climb1000Stairs"))()
+    elseif game.PlaceId == 10129750406 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/Climb2000StairsToVIPObby"))()
+    elseif game.PlaceId == 13504308791 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/ClimbRocksToVIPObby"))()
+    elseif game.PlaceId == 13700191568 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/ClimbWallForVIPObby"))()
+    elseif game.PlaceId == 13390606647 or game.PlaceId == 13762516482 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/Don'tGetSniffed"))()
+    elseif game.PlaceId == 13305899582 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/EasyColorSwitchObby"))()
+    elseif game.PlaceId == 12961669859 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/EasyFunObby"))()
+    elseif game.PlaceId == 13412190446 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/EasyGrowObby"))()
+    elseif game.PlaceId == 5972698540 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/EasyObby"))()
+    elseif game.PlaceId == 11166344460 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/EasyStudJumpsObby"))()
+    elseif game.PlaceId == 12678260048 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/EscapeIPadKid"))()
+    elseif game.PlaceId == 2028593804 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/EscapeTheDungeonObby"))()
+    elseif game.PlaceId == 5310443220 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/GodTycoon"))()
+    elseif game.PlaceId == 9099326192 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/GreatSchoolBreakout"))()
+    elseif game.PlaceId == 9372570969 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/GrumpyGran"))()
+    elseif game.PlaceId == 6717367660 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/HappyLand"))()
+    elseif game.PlaceId == 8503115846 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/ImpossibleGlassBridge"))()
+    elseif game.PlaceId == 7952502098 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/ImpossibleGlassBridgeObby"))()
+    elseif game.PlaceId == 4104106043 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/InsaneElevator"))()
+    elseif game.PlaceId == 13958693327 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/MathWallSimulator"))()
+    elseif game.PlaceId == 3587619225 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/MegaEasyObby825Stages"))()
+    elseif game.PlaceId == 11308951249 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/ObbyButYou'reABird"))()
+    elseif game.PlaceId == 11697499450 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/ObbyButYou'reAPotato"))()
+    elseif game.PlaceId == 13326256431 or game.PlaceId == 13448683258 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/ObbyButYouCan'tJump"))()
+    elseif game.PlaceId == 13740956703 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/ObbyButYouCan'tSee"))()
+    elseif game.PlaceId == 12392649239 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/PoliceGirlPrisonRun"))()
+    elseif game.PlaceId == 12413830324 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/StudJumpObby"))()
+    elseif game.PlaceId == 11364184405 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/SuperFunObby725Stages"))()
+    elseif game.PlaceId == 13710629738 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/TeamAlienObby"))()
+    elseif game.PlaceId == 10760024537 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/UltimateEasyObby"))()
+    elseif game.PlaceId == 13048729872 then
+        loadstring(game:HttpGet("https://github.com/KhSaeed90/Roblox/raw/workspace/UltraEasyObby"))()
+    else
+        game:GetService("StarterGui"):SetCore("SendNotification",
+        {Title = "Game NOT Supported", Text = "Sorry, But this experience is not supported YET", Duration = 10})
+    end
+end
 
+--[[
+
+
+
+
+
+    KeySystem
+
+
+
+
+
+]]--
+function getStoredKey()
+    if isfile("KeySys.txt") then
+        if readfile("KeySys.txt") == loadedKey then
+            Script()
+            game:GetService("StarterGui"):SetCore("SendNotification",
+            {Title = "Correct Key Stored", Text = "Welcome Again, "..game.Players.LocalPlayer.Name..",\nThank you for support.", Duration = 10})
+            return true
+        else
+            delfile("KeySys.txt")
+            game:GetService("StarterGui"):SetCore("SendNotification",
+            {Title = "Key Renewed", Text = "Please, Grab the new key.", Duration = 10})
+            return nil
+        end
+    end
+end
+function readKey(typedKey)
+    if typedKey == loadedKey then
+        Script()
+        writefile("KeySys.txt", typedKey)
+        game:GetService("StarterGui"):SetCore("SendNotification",
+        {Title = "Correct Key", Text = "Welcome "..game.Players.LocalPlayer.Name..",\nThank you for support.", Duration = 10})
+    else
+        if isfile("KeySys.txt") then
+            if readfile("KeySys.txt") == loadedKey then
+                Script()
+                game:GetService("StarterGui"):SetCore("SendNotification",
+                {Title = "Correct Key Found", Text = "Welcome Again, "..game.Players.LocalPlayer.Name..",\nThank you for support.", Duration = 10})
+            else
+                delfile("KeySys.txt")
+                game:GetService("StarterGui"):SetCore("SendNotification",
+                {Title = "Key Renewed", Text = "Please, Grab the new key.", Duration = 10})
+            end
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification",
+            {Title = "Incorrect Key", Text = "Please, Grab NEW key from the link", Duration = 5})
+        end
+    end
+end
+getgenv(). typedKey=""
+loadedKey = game:HttpGet("https://pastebin.com/raw/QKZGwRWK")
+if getStoredKey() then
+    Script()
+    else
+    addUI = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+    addWindow = addUI:CreateWindow("KeySystem") -- Creates the window
+    addFolder = addWindow:CreateFolder("Main") -- Creates the folder(U will put here your buttons,etc)
+    addFolder:Box("\tKey Check\t", "string", function(value) -- "number" or "string"
+        readKey(value)
+    end)
+    addFolder:Button("Link to Key", function()
+        setclipboard("https://link-target.net/897280/khsaeed90")
+        game:GetService("StarterGui"):SetCore("SendNotification",
+        {Title = "Key link copied", Text = "Thank you, "..game.Players.LocalPlayer.Name.." for support.", Duration = 10})
+    end)
+    addFolder:Label("Close Ui", {TextSize=16; TextColor=Color3.fromRGB(0,255,0); BgColor=Color3.fromRGB(0,0,0);})
+    addFolder:DestroyGui()
+end
