@@ -129,6 +129,7 @@ end
 getgenv(). typedKey=""
 loadedKey = game:HttpGet("https://pastebin.com/raw/QKZGwRWK")
 if getStoredKey() then
+    pcall(function() addFolder:DestroyGui() end)
     Script()
     else
     addUI = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
