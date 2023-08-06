@@ -1,0 +1,70 @@
+--[[
+      Game Name: Escape The World Obby 🌎 [Mega Easy]
+      Game Link: https://www.roblox.com/games/6496746583/
+]]--
+
+addUI = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+addWindow = addUI:CreateWindow("EscapeTheWorldObby") -- Creates the window
+addFolder = addWindow:CreateFolder("Main I") -- Creates the folder(U will put here your buttons,etc)
+addFolder:Slider("Stage Slider >", {min=1; max=250; precise=nil}, function(value) -- true or nil for decimal
+    getStage(value)
+end)
+addFolder:Button("Next Stage", function()
+    getStage(game:GetService("Players").LocalPlayer.leaderstats.Stage.Value+1)
+end)
+addFolder:Button("Rebirth", function()
+    getRebirth()
+end)
+addFolder:Toggle("Auto Stage$Rebirth\t>", function(bool)
+    stage = bool
+    heartStage=game.RunService.Heartbeat:connect(function()
+        if stage then
+            getStage(game:GetService("Players").LocalPlayer.leaderstats.Stage.Value+1)
+            getRebirth()
+            else
+            heartStage:disconnect()
+        end
+    end)
+end)
+addFolder = addWindow:CreateFolder("Close Ui") -- Creates the folder(U will put here your buttons,etc)
+addFolder:Button("|| Join Discord ||", function()
+    setclipboard(HttpGet("https://pastebin.com/raw/Xh7svjmp"))
+    game:GetService("StarterGui"):SetCore("SendNotification",
+    {Title = "Link Copied", Text = "Please, Join the server for more scripts!", Duration = 10})
+end)
+addFolder:DestroyGui()
+
+-- Functions
+function getStage(value)
+    if value == 25 then
+        game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.WorldPortals.PlainsCaves.InPortal.CFrame)
+    elseif value == 50 then
+        game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.WorldPortals.CavesJungle.InPortal.CFrame)
+    elseif value == 75 then
+        game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.WorldPortals.JungleMountains.InPortal.CFrame)
+    elseif value == 100 then
+        game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.WorldPortals.MountainsGlaciers.InPortal.CFrame)
+    elseif value == 125 then
+        game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.WorldPortals.GlaciersSea.InPortal.CFrame)
+    elseif value == 150 then
+        game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.WorldPortals.SeaCity.InPortal.CFrame)
+    elseif value == 175 then
+        game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.WorldPortals.CityDesert.InPortal.CFrame)
+    elseif value == 200 then
+        game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.WorldPortals.DesertSavannah.InPortal.CFrame)
+    elseif value == 225 then
+        game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.WorldPortals.SavannahForest.InPortal.CFrame)
+    else
+        for i, v in next, workspace.Checkpoints:GetChildren() do
+            if tonumber(v.Name) == value then
+                game.Players.LocalPlayer.Character:MoveTo(v.Position)
+            end
+        end
+    end
+end
+function getRebirth()
+    if game:GetService("Players").LocalPlayer.leaderstats.Stage.Value == "250" then
+        -- game.Players.LocalPlayer.Character.HumanoidRootPart:PivotTo(workspace.RestartPortal.Portal.CFrame)
+        game:GetService("ReplicatedStorage").Remotes.ToServer.RestartPlayer:FireServer()
+    end
+end
