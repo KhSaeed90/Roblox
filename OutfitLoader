@@ -1,0 +1,27 @@
+-- https://www.roblox.com/games/4984400432/
+
+addLibrary = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))() -- Don't Change
+addWindow = addLibrary:CreateWindow("Outfit Loader") -- Create Window "Replicate for more Windows"
+addFolder = addWindow:CreateFolder("Main I") -- Creates Folder "U will put here your buttons, etc"
+addFolder:Button("1k Queue",function()
+    getQueue(1e3)
+end)
+addFolder = addWindow:CreateFolder("Close Ui") -- Creates the folder(U will put here your buttons,etc)
+addFolder:Button("|| Join Discord ||", function()
+    setclipboard(HttpGet("https://pastebin.com/raw/Xh7svjmp"))
+    game:GetService("StarterGui"):SetCore("SendNotification",
+    {Title = "Link Copied", Text = "Please, Join the server for more scripts!", Duration = 10})
+end)
+addFolder:DestroyGui()
+
+-- Functions
+
+function getQueue(value)
+    for i, v in next, game.Players:GetPlayers() do
+        if v and v.UserId then
+            for i = 1, value do
+                game:GetService("ReplicatedStorage")["\226\160\128\226\160\128\226\160\128\226\160\128\240\159\152\131_outfit_\226\160\129\226\160\128\226\160\128\226\160\128\226\160\128\226\160\128\226\160\128\226\160\128\226\160\128\226\160\128\226\160\128\226\160\128"]:FireServer(v.UserId)
+            end
+        end
+    end
+end
