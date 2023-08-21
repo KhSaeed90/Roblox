@@ -1,0 +1,61 @@
+--[[
+	Game Name: 🐝 Beeface: Be a Bee!
+	roblox://experiences/start?placeId=6410967163
+	Link Link: https://www.roblox.com/games/6410967163/
+]]--
+
+addLibrary = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))() -- Don't Change
+addWindow = addLibrary:CreateWindow("Beeface: Be a Bee")
+addFolder = addWindow:CreateFolder("Main")
+addFolder:Bind("Collect honey", Enum.KeyCode.Q, function()
+    getBeehive()
+end)
+addFolder:Box("Change World", "number", function(value)
+    getWorld(tonumber(value))
+end)
+addFolder:Label("Bonus", {TextSize=16; TextColor=Color3.fromRGB(0,255,0); BgColor=Color3.fromRGB(0,0,0)})
+addFolder:Button("Spawn Teleport", function()
+    getTeleport()
+end)
+addFolder:Button("Get Crown", function()
+    getCrown()
+end)
+addFolder:Button("Beatify Plot", function()
+    getRemove()
+end)
+addFolder = addWindow:CreateFolder("Close Ui") -- Creates the folder(U will put here your buttons,etc)
+addFolder:Button("|| More Scripts ||", function()
+    setclipboard(HttpGet("https://controlc.com/5572471c"))
+    game:GetService("StarterGui"):SetCore("SendNotification",
+    {Title = "Link Copied", Text = "Please, Join the server for more scripts!", Duration = 10})
+end)
+addFolder:DestroyGui()
+
+-- Functions
+function getPlot()
+    for i, v in next, workspace.NamePlates:GetChildren() do
+        if v:GetAttribute("BaseOwner") == game.Players.LocalPlayer.Name then
+            return v
+        end
+    end
+end
+function getTeleport()
+    game.Players.LocalPlayer.Character:MoveTo(getPlot().SpawnLocation.Position)
+    return
+end
+function getWorld(value)
+    game:GetService("ReplicatedStorage").TeleportRequest:InvokeServer(value)
+end
+function getBeehive()
+    if game:GetService("Players").LocalPlayer.PlayerGui.ResourceGui.PollenPanel.Text.Text then
+        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Beehive.HitBox, 0)
+        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Beehive.HitBox, 1)
+    end
+end
+function getRemove()
+    for i, v in next, workspace.Tiles:GetChildren() do
+        if not v.Name:find("Egg") and not v.Name:find("Spawner") and not v.Name:find("Hexa") then
+            v:destroy()
+        end
+    end
+end
