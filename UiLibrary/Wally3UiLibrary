@@ -6,14 +6,14 @@
 addLibrary = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))() -- Don't Change
 addWindow = addLibrary:CreateWindow("A") -- Create Window "Replicate for more Windows"
 addFolder = addWindow:CreateFolder("B") -- Creates Folder "U will put here your buttons, etc"
-addFolder:Label("Pretty Useless NGL", {TextSize=14; TextColor=Color3.fromRGB(255,255,255); BgColor=Color3.fromRGB(69,69,69)})
 addFolder:Button("Button", function()
-    print("Elym Winning")
+    print()
 end)
 addFolder:Toggle("Toggle", function(bool)
     shared.toggle = bool
     print(shared.toggle)
 end)
+addFolder:Label("Bonus", {TextSize=16; TextColor=Color3.fromRGB(0,255,0); BgColor=Color3.fromRGB(0,0,0)})
 addFolder:Slider("Slider", {min=1; max=50; precise=true}, function(value)
     print(value)
 end)
@@ -21,7 +21,7 @@ addFolder:Dropdown("Dropdown", {"A","B","C"}, true, function(mob)
     print(mob)
 end)
 addFolder:Bind("Bind", Enum.KeyCode.C, function()
-    print("Yes")
+    print()
 end)
 addFolder:ColorPicker("ColorPicker", Color3.fromRGB(255,255,0), function(color)
     print(color)
@@ -29,19 +29,10 @@ end)
 addFolder:Box("Box", "number", function(value) -- "number" or "string"
     print(value)
 end)
+addFolder = addWindow:CreateFolder("Close Ui") -- Creates the folder(U will put here your buttons,etc)
+addFolder:Button("|| More Scripts ||", function()
+    setclipboard("https://controlc.com/5572471c")
+    game:GetService("StarterGui"):SetCore("SendNotification",
+    {Title = "Link Copied", Text = "Join Discord server for More Scripts!", Duration = 10})
+end)
 addFolder:DestroyGui()
-
---[[
-How to refresh a dropdown:
-  1)Create the dropdown and save it in a variable
-    yourvariable = addFolder:Dropdown("Hi", yourtable, function(a)
-        print(a)
-    end)
-  2)Refresh it using the function
-    yourvariable:Refresh(yourtable)
-How to refresh a label:
-  1)Create your label and save it in a variable
-    yourvariable = addFolder:Label("Pretty Useless NGL", {TextSize=14; TextColor=Color3.fromRGB(255,255,255); BgColor=Color3.fromRGB(69,69,69)})
-  2)Refresh it using the function
-    yourvariable:Refresh("Hello") It will only change the text ofc
-]]--
