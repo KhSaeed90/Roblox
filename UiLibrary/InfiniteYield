@@ -1,4 +1,5 @@
--- Source: https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source
+-- Source	: https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source
+-- Credits	: https://infyiff.github.io/, https://github.com/EdgeIY/infiniteyield/wiki
 
 if IY_LOADED and not _G.IY_DEBUG == true then
     -- error("Infinite Yield is already running!", 0)
