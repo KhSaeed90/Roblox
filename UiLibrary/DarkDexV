@@ -1,5 +1,5 @@
--- Credits: https://github.com/LorekeeperZinnia/Dex
--- loadstring: loadstring(game:HttpGet("https://github.com/infyiff/backup/raw/main/dex.lua"))()
+-- Source	: https://github.com/infyiff/backup/raw/main/dex.lua
+-- Credits	: https://github.com/LorekeeperZinnia/Dex
 
 --[[
 	New Dex
