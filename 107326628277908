@@ -1,1 +1,5 @@
-print("TBD")
+function get(...)
+  local Note = ...
+  print(Note)
+end
+get("To Be Upated")
